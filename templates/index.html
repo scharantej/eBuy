@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Electronic Purchasing System</title>
+</head>
+<body>
+<h1>Electronic Purchasing System</h1>
+<ul>
+{% for product in products %}
+<li><a href="{{ url_for('product_page', product_id=product['id']) }}">{{ product['name'] }}</a></li>
+{% endfor %}
+</ul>
+</body>
+</html>
+
+
